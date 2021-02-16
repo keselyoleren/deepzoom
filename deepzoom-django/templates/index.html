@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="openseadragon1" style="width: 800px; height: 600px;"></div>
+
+    <script src="{% static 'openseadragon/openseadragon.min.js' %}"></script>
+    
+    <script type="text/javascript">
+
+        var viewer = OpenSeadragon({
+            id: "openseadragon1",
+            prefixUrl: "{% static '/openseadragon/images/' %}",
+            tileSources: "http://localhost:8000/media/CMU-2.dzi"
+            //tileSources: "https://neurabot-os-bucket.oss-ap-southeast-5.aliyuncs.com/megamendung.svs.dzi"
+        });
+      
+    </script>
+
+</body>
+</html>
