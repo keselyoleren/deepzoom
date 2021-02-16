@@ -1,0 +1,4 @@
+endpoint = 'http://oss-ap-southeast-5.aliyuncs.com' 
+
+auth = oss2.Auth('LTAI4G76hcBByzggmFZzdiuu', 'rwiUHkCER7WqGGgCaKyjV9wsTdGLHB')
+BUCKET = oss2.Bucket(auth, endpoint, 'neurabot-os-bucket')
