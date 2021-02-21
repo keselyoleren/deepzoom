@@ -237,18 +237,18 @@ if __name__ == '__main__':
                 default=False, action='store_false',
                 help='display entire scan area')
     parser.add_option('-e', '--overlap', metavar='PIXELS', dest='overlap',
-                type='int', default=100,
+                type='int', default=1,
                 help='overlap of adjacent tiles [1]')
     parser.add_option('-f', '--format', metavar='{jpeg|png}', dest='format',
                 default='jpeg',
                 help='image format for tiles [jpeg]')
     parser.add_option('-j', '--jobs', metavar='COUNT', dest='workers',
-                type='int', default=100,
+                type='int', default=4,
                 help='number of worker processes to start [4]')
     parser.add_option('-o', '--output', metavar='NAME', dest='basename',
                 help='base name of output file')
     parser.add_option('-Q', '--quality', metavar='QUALITY', dest='quality',
-                type='int', default=100,
+                type='int', default=50,
                 help='JPEG compression quality [90]')
     parser.add_option('-r', '--viewer', dest='with_viewer',
                 action='store_true',
